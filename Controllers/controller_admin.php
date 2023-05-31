@@ -23,10 +23,10 @@ class controller_admin
         $e = $this->model->setData($id, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman);
 
         if ($e == "") {
-            header("location:../admin-view/index.php");
+            include '../Views/view-admin/view-create/create.html';
         } else {
             $_SESSION['temp'] = $e;
-            header("location:../admin-create/index.php");
+            include '../Views/view-admin/view-create/create.html';
         }
     }
 
@@ -34,13 +34,13 @@ class controller_admin
     {
         $this->model->deleteRow($id);
 
-        header("location:../admin-zoo/index.php");
+        include '../Views/view-admin/view-zoo/zoo.html';
     }
 
     public function update($no, $id, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman)
     {
         $e = $this->model->updateRow($no, $id, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman);
-        header("location:../admin-zoo/index.php/");
+        include '../Views/view-admin/view-update/update.html';
     }
 
     public function row($id)
@@ -48,35 +48,11 @@ class controller_admin
         return $data = $this->model->getUpdateRow($id);
     }
 
-    // public function log()
-    // {
-    //     session_start();
-    //     $user = $_POST["user"];
-    //     $pass = $_POST["pass"];
-    //     $data = $this->model->login($user, $pass);
-
-    //     if ($data == "admin") {
-    //         $_SESSION['username'] = 'admin';
-    //         header("location:../data/");
-    //     } else {
-    //         $_SESSION['temp'] = "error";
-    //         header("location:../login/");
-    //     }
-
-        
-    // }
-
-    public function viewAdmin()
+    public function viewAdmin($email)
     {
         $data = $this->model->getAllRowAdmin();
+        $data2 = $this->model->getRowAdmin($email);
         include '../Views/view-admin/view-profile/profile.html';
     }
-
-    public function viewProfileAdmin($email)
-    {
-        $data = $this->model->getRowAdmin($email);
-        include '../Views/view-admin/view-profile/profile.html';
-    }
-
     
 }
