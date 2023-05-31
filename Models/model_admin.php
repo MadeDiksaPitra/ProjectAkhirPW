@@ -74,5 +74,3 @@ class model_admin
     }
 
 }
-
-//hai
