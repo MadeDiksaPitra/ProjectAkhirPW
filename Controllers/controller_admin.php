@@ -48,23 +48,23 @@ class controller_admin
         return $data = $this->model->getUpdateRow($id);
     }
 
-    public function log()
-    {
-        session_start();
-        $user = $_POST["user"];
-        $pass = $_POST["pass"];
-        $data = $this->model->login($user, $pass);
+    // public function log()
+    // {
+    //     session_start();
+    //     $user = $_POST["user"];
+    //     $pass = $_POST["pass"];
+    //     $data = $this->model->login($user, $pass);
 
-        if ($data == "admin") {
-            $_SESSION['username'] = 'admin';
-            header("location:../data/");
-        } else {
-            $_SESSION['temp'] = "error";
-            header("location:../login/");
-        }
+    //     if ($data == "admin") {
+    //         $_SESSION['username'] = 'admin';
+    //         header("location:../data/");
+    //     } else {
+    //         $_SESSION['temp'] = "error";
+    //         header("location:../login/");
+    //     }
 
         
-    }
+    // }
 
     public function viewAdmin()
     {
@@ -72,9 +72,9 @@ class controller_admin
         include '../Views/view-admin/view-profile/profile.html';
     }
 
-    public function viewProfileAdmin()
+    public function viewProfileAdmin($email)
     {
-        $data = $this->model->getRowAdmin();
+        $data = $this->model->getRowAdmin($email);
         include '../Views/view-admin/view-profile/profile.html';
     }
 

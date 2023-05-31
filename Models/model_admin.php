@@ -70,7 +70,7 @@ class model_admin
         }
     }
 
-    public function getRow($id)
+    public function getUpdateRow($id)
     {
         global $mysqli;
 
