@@ -82,3 +82,5 @@ class model_binatang
         return $rows;
     }
 }
+
+//yo
