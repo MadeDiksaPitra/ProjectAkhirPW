@@ -1,0 +1,288 @@
+.indextambah-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.indextambah-all-panel {
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: white;
+}
+.indextambah-header {
+  width: 100%;
+  height: 142px;
+  display: flex;
+  box-shadow: 5px 5px 10px 0px #52aba7;
+  align-items: flex-start;
+  border-radius: 0px;
+  background-image: linear-gradient(to right, #1380e5 0%, #263252 100%);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.indextambah-text {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding-left: var(--dl-space-space-threeunits);
+  flex-direction: column;
+  justify-content: center;
+}
+.indextambah-text1 {
+  color: rgb(172, 251, 255);
+  font-size: 50px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 700;
+}
+.indextambah-isi {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-threeunits);
+  padding-left: var(--dl-space-space-threeunits);
+  flex-direction: column;
+}
+.indextambah-text2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+.indextambah-text3 {
+  color: rgb(38, 50, 82);
+  font-size: 50px;
+  align-self: center;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 500;
+}
+.indextambah-isian {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-start;
+  padding-left: 0px;
+  flex-direction: column;
+}
+.indextambah-form {
+  width: 100%;
+  height: 423px;
+  display: flex;
+  flex-direction: column;
+}
+.indextambah-container01 {
+  width: 100%;
+  height: 74px;
+  display: flex;
+  align-items: center;
+}
+.indextambah-container02 {
+  flex: 0 0 auto;
+  width: 254px;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+}
+.indextambah-text4 {
+  color: rgb(38, 50, 82);
+  font-size: 30px;
+  align-self: center;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 600;
+}
+.indextambah-container03 {
+  flex: 1;
+  width: 1250px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding-right: var(--dl-space-space-threeunits);
+  justify-content: flex-start;
+}
+.indextambah-textinput {
+  color: #263252;
+  width: 100%;
+  font-size: 25px;
+  box-shadow: 5px 5px 10px 0px #263252;
+  font-family: Poppins;
+  border-color: rgb(38, 50, 82);
+  border-width: 5px;
+  border-radius: 20px;
+  background-color: transparent;
+}
+.indextambah-container04 {
+  width: 100%;
+  height: 74px;
+  display: flex;
+  align-items: center;
+}
+.indextambah-container05 {
+  flex: 0 0 auto;
+  width: 254px;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+}
+.indextambah-text5 {
+  color: rgb(38, 50, 82);
+  font-size: 30px;
+  align-self: center;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 600;
+}
+.indextambah-container06 {
+  flex: 1;
+  width: 1250px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding-right: var(--dl-space-space-threeunits);
+  justify-content: flex-start;
+}
+.indextambah-textinput1 {
+  color: #263252;
+  width: 100%;
+  font-size: 25px;
+  box-shadow: 5px 5px 10px 0px #263252;
+  font-family: Poppins;
+  border-color: rgb(38, 50, 82);
+  border-width: 5px;
+  border-radius: 20px;
+  background-color: transparent;
+}
+.indextambah-container07 {
+  width: 100%;
+  height: 74px;
+  display: flex;
+  align-items: center;
+}
+.indextambah-container08 {
+  flex: 0 0 auto;
+  width: 254px;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+}
+.indextambah-text6 {
+  color: rgb(38, 50, 82);
+  font-size: 30px;
+  align-self: center;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 600;
+}
+.indextambah-container09 {
+  flex: 1;
+  width: 1250px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding-right: var(--dl-space-space-threeunits);
+  justify-content: flex-start;
+}
+.indextambah-textinput2 {
+  color: #263252;
+  width: 100%;
+  font-size: 25px;
+  box-shadow: 5px 5px 10px 0px #263252;
+  font-family: Poppins;
+  border-color: rgb(38, 50, 82);
+  border-width: 5px;
+  border-radius: 20px;
+  background-color: transparent;
+}
+.indextambah-container10 {
+  width: 100%;
+  height: 74px;
+  display: flex;
+  align-items: center;
+}
+.indextambah-container11 {
+  flex: 0 0 auto;
+  width: 254px;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+}
+.indextambah-text7 {
+  color: rgb(38, 50, 82);
+  font-size: 30px;
+  align-self: center;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 600;
+}
+.indextambah-container12 {
+  flex: 1;
+  width: 1250px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding-right: var(--dl-space-space-threeunits);
+  justify-content: flex-start;
+}
+.indextambah-textinput3 {
+  color: #263252;
+  width: 100%;
+  font-size: 25px;
+  box-shadow: 5px 5px 10px 0px #263252;
+  font-family: Poppins;
+  border-color: rgb(38, 50, 82);
+  border-width: 5px;
+  border-radius: 20px;
+  background-color: transparent;
+}
+.indextambah-submit {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: var(--dl-space-space-threeunits);
+  align-items: center;
+  padding-left: 0px;
+  padding-right: 0px;
+  justify-content: flex-start;
+}
+.indextambah-button {
+  color: #dce1ed;
+  width: 212px;
+  font-size: 40px;
+  align-self: center;
+  box-shadow: 5px 5px 10px 0px #263252;
+  text-align: center;
+  font-family: Poppins;
+  border-width: 0px;
+  border-radius: 20px;
+  background-color: #1380e5;
+}
+.indextambah-error {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: var(--dl-space-space-twounits);
+  align-items: flex-start;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.indextambah-text8 {
+  color: rgb(38, 50, 82);
+  font-size: 23px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 700;
+}
