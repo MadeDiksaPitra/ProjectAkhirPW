@@ -26,12 +26,23 @@
         </tr>
 
         <?php
-        echo "<tr>
-            <td>$data[nim]</td>
-            <td>$data[nama]</td>
-            <td>$data[programstudi]</td>
-            <td>$data[email]</td>
-            </tr>";
+        foreach ($data as $index) {
+            echo "
+            <tr>
+                <td>$index[id]</td>
+                <td>$index[nama]</td>
+                <td>$index[fakta_unik]</td>
+                <td>$index[keterangan]</td>
+                <td>$index[habitat]</td>
+                <td>$index[makanan]</td>
+                <td>$index[cara_hidup]</td>
+                <td>$index[reproduksi]</td>
+                <td>$index[ancaman]</td>
+                <td>$index[foto_profil]</td>
+                <td>$index[foto_halaman]</td>
+            </tr>
+        ";
+        }
         ?>
     </table>
 </body>
