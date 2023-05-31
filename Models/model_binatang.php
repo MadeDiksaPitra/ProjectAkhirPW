@@ -42,21 +42,22 @@ class model_binatang
     public function getSemuaData()
     {
         global $mysqli;
-        $rs = $mysqli->query("SELECT * FROM list_binatang");
-        $rows = array();
-        while ($row = $rs->fetch_assoc()) {
-            $rows[] = $row;
-        }
 
-        return $rows;
+        $rs = $mysqli->query("SELECT nama FROM list_binatang");
+        // $rows = array();
+        // while ($row = $rs->fetch_assoc()) {
+        //     $rows[] = $row;
+        // }
+
+        return $rs;
     }
 
-    public function deleteRow($id)
-    {
-        global $mysqli;
+    // public function deleteRow($id)
+    // {
+    //     global $mysqli;
 
-        $mysqli->query("DELETE FROM list_binatang WHERE id = '$id'");
-    }
+    //     $mysqli->query("DELETE FROM list_binatang WHERE id = '$id'");
+    // }
 
     public function updateRow($no, $id, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman)
     {
@@ -70,15 +71,15 @@ class model_binatang
         }
     }
 
-    public function getRow($id)
-    {
-        global $mysqli;
+    // public function getRow($id)
+    // {
+    //     global $mysqli;
 
-        $rs = $mysqli->query("SELECT * FROM list_binatang WHERE id = '$id'");
-        $rows = array();
-        while ($row = $rs->fetch_assoc()) {
-            $rows = $row;
-        }
-        return $rows;
-    }
+    //     $rs = $mysqli->query("SELECT * FROM list_binatang WHERE id = '$id'");
+    //     $rows = array();
+    //     while ($row = $rs->fetch_assoc()) {
+    //         $rows = $row;
+    //     }
+    //     return $rows;
+    // }
 }
