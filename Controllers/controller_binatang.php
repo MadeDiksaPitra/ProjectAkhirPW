@@ -2,7 +2,7 @@
 
 include_once("../Models/model_binatang.php");
 
-class controller_admin
+class controller_binatang
 {
     public $model;
 
