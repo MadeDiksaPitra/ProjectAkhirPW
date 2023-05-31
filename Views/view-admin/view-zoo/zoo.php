@@ -10,7 +10,7 @@
 
 <body>
 
-    <form method='post' action='../admin-create/'>
+    <form method='post' action='../create-form/'>
         <button type='submit'>
             Tambah Data
         </button>

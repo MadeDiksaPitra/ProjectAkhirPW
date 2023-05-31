@@ -1,6 +1,7 @@
 <?php
 
 include_once("../Models/model_admin.php");
+// include_once("F:\\Program Files\\xampp\\htdocs\\ProjectAkhirPW\\Models\\model_admin.php");
 
 class controller_admin
 {
@@ -16,13 +17,13 @@ class controller_admin
         include '../Views/view-admin/view-zoo/zoo.php';
     }
 
-    public function add($nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman)
+    public function add($id, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman)
     {
         session_start();
         print_r("ini file control");
 
-        $e = $this->model->setData($nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman);
-        include './Views/view-admin/view-zoo/zoo.php';
+        $e = $this->model->setData($id, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman);
+        header("location:../admin-zoo");
     }
 
     public function delete($id)
