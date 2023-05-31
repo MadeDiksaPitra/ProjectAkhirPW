@@ -1,5 +1,6 @@
 <?php
-include_once("../Controllers/controller_admin.php");
+include_once("./Controllers/controller_admin.php");
+print_r("ini file api");
 $controller = new controller_admin();
 
 $nama = $_POST["nama"];

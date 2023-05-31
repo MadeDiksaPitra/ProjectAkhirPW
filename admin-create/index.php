@@ -1,3 +1,3 @@
 <?php
 session_start();
-include "../Views/view-admin/view-create";
+include_once("../Views/view-admin/view-create/create.php");

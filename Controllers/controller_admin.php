@@ -19,15 +19,10 @@ class controller_admin
     public function add($nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman)
     {
         session_start();
+        print_r("ini file control");
 
         $e = $this->model->setData($nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman);
-
-        if ($e == "") {
-            include '../Views/view-admin/view-create/create.html';
-        } else {
-            $_SESSION['temp'] = $e;
-            include '../Views/view-admin/view-create/create.html';
-        }
+        include './Views/view-admin/view-zoo/zoo.php';
     }
 
     public function delete($id)
@@ -54,5 +49,4 @@ class controller_admin
         $data2 = $this->model->getRowAdmin($email);
         include '../Views/view-admin/view-profile/profile.html';
     }
-    
 }
