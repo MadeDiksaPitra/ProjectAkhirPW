@@ -10,42 +10,42 @@ class controller_admin
     {
         $this->model = new model_admin();
     }
-    public function vid()
+    public function view()
     {
         $data = $this->model->getSemuaData();
-        include 'v_data.php';
+        include '../Views/view-admin/view-zoo/zoo.html';
     }
 
-    public function add($nim, $nama, $prodi, $email)
+    public function add($id, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman)
     {
         session_start();
 
-        $e = $this->model->setData($nim, $nama, $prodi, $email);
+        $e = $this->model->setData($id, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman);
 
         if ($e == "") {
-            header("location:../data/");
+            header("location:../admin-view/index.php");
         } else {
             $_SESSION['temp'] = $e;
-            header("location:../tambah/");
+            header("location:../admin-create/index.php");
         }
     }
 
-    public function delete($nim)
+    public function delete($id)
     {
-        $this->model->deleteRow($nim);
+        $this->model->deleteRow($id);
 
-        header("location:../data/");
+        header("location:../admin-zoo/index.php");
     }
 
-    public function update($no, $nim, $nama, $prodi, $email)
+    public function update($no, $id, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman)
     {
-        $e = $this->model->updateRow($no, $nim, $nama, $prodi, $email);
-        header("location:../data/");
+        $e = $this->model->updateRow($no, $id, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman);
+        header("location:../admin-zoo/index.php/");
     }
 
-    public function row($no)
+    public function row($id)
     {
-        return $data = $this->model->getRow($no);
+        return $data = $this->model->getUpdateRow($id);
     }
 
     public function log()
@@ -65,4 +65,18 @@ class controller_admin
 
         
     }
+
+    public function viewAdmin()
+    {
+        $data = $this->model->getAllRowAdmin();
+        include '../Views/view-admin/view-profile/profile.html';
+    }
+
+    public function viewProfileAdmin()
+    {
+        $data = $this->model->getRowAdmin();
+        include '../Views/view-admin/view-profile/profile.html';
+    }
+
+    
 }
