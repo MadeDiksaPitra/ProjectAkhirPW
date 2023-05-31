@@ -9,6 +9,13 @@
 </head>
 
 <body>
+
+    <form method='post' action='../admin-create/'>
+        <button type='submit'>
+            Tambah Data
+        </button>
+    </form>
+
     <table class="tabel">
         <tr>
             <th>id</th>
@@ -43,7 +50,7 @@
                 <td>$index[foto_profil]</td>
                 <td>$index[foto_halaman]</td>
                 <td><a href='../admin-update/index.php?id=" . $index["id"] . "'>Update</a></td>
-                <td><a href='../admin-delete/index.php?id=" . $index["id"] . "' onclick='return confirm(\"Apakah Anda yakin ingin menghapus data ini?\")'>Hapus</a></td>
+                <td><a href='../Api/admin-delete/index.php?id=" . $index["id"] . "' onclick='return confirm(\"Apakah Anda yakin ingin menghapus data ini?\")'>Hapus</a></td>
             </tr>
         ";
         }

@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form action="./admin-create" method="post" class="">
+    <form action="./Api/admin-create" method="post" class="">
 
                 <span class="indextambah-text4">ID</span>
                 <input type="text" name="id" placeholder="Masukkan ID" class="indextambah-textinput input" />
