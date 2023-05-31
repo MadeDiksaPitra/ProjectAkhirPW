@@ -61,12 +61,12 @@ class model_admin
         $mysqli->query("DELETE FROM admin_zoo WHERE email = '$email'");
     }
 
-    public function updateRowAdmin($no, $email, $no_telp, $nama, $tanggal_lahir)
+    public function updateRowAdmin($id, $email, $no_telp, $nama, $tanggal_lahir)
     {
         global $mysqli;
 
         try {
-            $mysqli->query("UPDATE admin_zoo SET email='$email', no_telp='$no_telp', nama='$nama', tanggal_lahir='$tanggal_lahir' WHERE email='$no'");
+            $mysqli->query("UPDATE admin_zoo SET email='$email', no_telp='$no_telp', nama='$nama', tanggal_lahir='$tanggal_lahir' WHERE email='$id'");
             return $e = "";
         } catch (mysqli_sql_exception $e) {
             return $e;
