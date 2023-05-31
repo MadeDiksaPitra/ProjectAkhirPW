@@ -8,13 +8,17 @@ POST http://localhost/ProjectAkhirPW/admin-create/index.php
 Content-Type: application/json
 
 {   
-    "email": "ararya@gmail.com", 
-    "no_telp": "083130023200", 
     "nama": "Ararya",
-    "tanggal_lahir": "2 Februari 1987",
-    "jenis_kelamin": "L",
-    "divisi": "Aves",
-    "password": "mbois" 
+    "kelas": "Aves",
+    "fakta_unik": "hai",
+    "keterangan": "halo",
+    "habitat": "mbois",
+    "makanan": "haloo",
+    "cara_hidup": "mboiss",
+    "reproduksi": "ui",
+    "ancaman": "ukk",
+    "foto_profil": "asas",
+    "foto_halaman": "afaf"
 }
 
 
