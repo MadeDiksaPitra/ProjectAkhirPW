@@ -1,5 +1,5 @@
 <?php
-require "./Models/opt/connection.php";
+require "../Models/opt/connection.php";
 class model_admin
 {
     private $id;

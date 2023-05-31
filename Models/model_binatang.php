@@ -1,5 +1,5 @@
 <?php
-require "../opt/connection.php";
+require "../Models/opt/connection.php";
 class model_binatang
 {
     public function getListNama()
