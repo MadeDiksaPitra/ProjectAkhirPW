@@ -2,7 +2,7 @@
 include_once("../Controllers/controller_admin.php");
 $controller = new controller_admin();
 
-$id = $_POST["nim"];
+$id = $_POST["id"];
 $nama = $_POST["nama"];
 $kelas= $_POST["kelas"];
 $fakta_unik= $_POST["fakta_unik"];
