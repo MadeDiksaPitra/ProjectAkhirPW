@@ -13,7 +13,7 @@ class controller_admin
     public function view()
     {
         $data = $this->model->getSemuaData();
-        include '../Views/view-admin/view-zoo/zoo.html';
+        include '../Views/view-admin/view-zoo/zoo.php';
     }
 
     public function add($nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman)
@@ -34,7 +34,7 @@ class controller_admin
     {
         $this->model->deleteRow($id);
 
-        include '../Views/view-admin/view-zoo/zoo.html';
+        header("location:../admin-zoo");
     }
 
     public function update($no, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman)

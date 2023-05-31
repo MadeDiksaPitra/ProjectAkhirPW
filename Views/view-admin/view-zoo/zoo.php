@@ -23,6 +23,7 @@
             <th>ancaman</th>
             <th>fp</th>
             <th>fh</th>
+            <th colspan='2'>Edit</th>
         </tr>
 
         <?php
@@ -31,6 +32,7 @@
             <tr>
                 <td>$index[id]</td>
                 <td>$index[nama]</td>
+                <td>$index[kelas]</td>
                 <td>$index[fakta_unik]</td>
                 <td>$index[keterangan]</td>
                 <td>$index[habitat]</td>
@@ -40,6 +42,8 @@
                 <td>$index[ancaman]</td>
                 <td>$index[foto_profil]</td>
                 <td>$index[foto_halaman]</td>
+                <td><a href='../admin-update/index.php?id=" . $index["id"] . "'>Update</a></td>
+                <td><a href='../admin-delete/index.php?id=" . $index["id"] . "' onclick='return confirm(\"Apakah Anda yakin ingin menghapus data ini?\")'>Hapus</a></td>
             </tr>
         ";
         }
