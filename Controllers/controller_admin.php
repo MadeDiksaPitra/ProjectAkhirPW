@@ -16,11 +16,11 @@ class controller_admin
         include '../Views/view-admin/view-zoo/zoo.html';
     }
 
-    public function add($id, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman)
+    public function add($nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman)
     {
         session_start();
 
-        $e = $this->model->setData($id, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman);
+        $e = $this->model->setData($nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman);
 
         if ($e == "") {
             include '../Views/view-admin/view-create/create.html';
@@ -37,9 +37,9 @@ class controller_admin
         include '../Views/view-admin/view-zoo/zoo.html';
     }
 
-    public function update($no, $id, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman)
+    public function update($no, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman)
     {
-        $e = $this->model->updateRow($no, $id, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman);
+        $e = $this->model->updateRow($no, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman);
         include '../Views/view-admin/view-update/update.html';
     }
 
