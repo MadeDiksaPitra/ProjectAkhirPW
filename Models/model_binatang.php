@@ -63,7 +63,7 @@ class model_binatang
         global $mysqli;
 
         try {
-            $mysqli->query("UPDATE list_binatang SET id='$id', nama='$nama', kelas='$kelas', fakta_unik='$fakta_unik', keterangan='$keterangan', habitat='$habitat', makanan='$makanan', cara_hidup='$cara_hidup', reproduksi='$reproduksi', ancaman='$ancaman', foto_profil='$foto_profil', foto_halaman='$foto_halaman' WHERE nim='$no'");
+            $mysqli->query("UPDATE list_binatang SET id='$id', nama='$nama', kelas='$kelas', fakta_unik='$fakta_unik', keterangan='$keterangan', habitat='$habitat', makanan='$makanan', cara_hidup='$cara_hidup', reproduksi='$reproduksi', ancaman='$ancaman', foto_profil='$foto_profil', foto_halaman='$foto_halaman' WHERE id='$no'");
             return $e = "";
         } catch (mysqli_sql_exception $e) {
             return $e;
@@ -74,7 +74,7 @@ class model_binatang
     {
         global $mysqli;
 
-        $rs = $mysqli->query("SELECT * FROM list_binatang WHERE nim = '$id'");
+        $rs = $mysqli->query("SELECT * FROM list_binatang WHERE id = '$id'");
         $rows = array();
         while ($row = $rs->fetch_assoc()) {
             $rows = $row;
