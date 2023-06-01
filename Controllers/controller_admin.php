@@ -34,19 +34,20 @@ class controller_admin
 
     public function update($no, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman)
     {
-        $e = $this->model->updateRow($no, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman);
-        include '../Views/view-admin/view-update/update.html';
+        $this->model->updateRow($no, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman);
+        header("location:../admin-zoo");
     }
 
     public function row($id)
     {
-        return $data = $this->model->getUpdateRow($id);
+        $data = $this->model->getUpdateRow($id);
+        return $data;
     }
 
     public function viewAdmin($email)
     {
         $data = $this->model->getAllRowAdmin();
         $data2 = $this->model->getRowAdmin($email);
-        include '../Views/view-admin/view-profile/profile.html';
+        include '../Views/view-admin/view-profile/profile.php';
     }
 }

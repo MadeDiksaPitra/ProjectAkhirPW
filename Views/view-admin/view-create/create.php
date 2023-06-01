@@ -47,6 +47,7 @@
         <p>Foto Halaman</p>
         <input type="text" name="foto_halaman" placeholder="Masukkan Foto Halaman" />
 
+        <p></p>
         <button name="submit" type="submit">
             Tambahkan
         </button>
