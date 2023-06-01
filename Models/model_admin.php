@@ -106,4 +106,13 @@ class model_admin
 
         return $rows;
     }
+
+    public function log($email)
+    {
+        global $mysqli;
+
+        $rs = $mysqli->query("SELECT password FROM admin_zoo WHERE email = '$email'");
+        
+
+    }
 }

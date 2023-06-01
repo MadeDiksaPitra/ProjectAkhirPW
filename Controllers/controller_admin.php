@@ -50,4 +50,9 @@ class controller_admin
         $data2 = $this->model->getRowAdmin($email);
         include '../Views/view-admin/view-profile/profile.php';
     }
+
+    public function log()
+    {
+
+    }
 }
