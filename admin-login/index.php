@@ -6,7 +6,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == TRUE) {
     exit;
 }
 
-require_once "../Models/opt/session.php";
+require_once "../Models/opt/connection.php";
 
 $user_login_err = $user_password_err = $login_err = "";
 $user_login = $user_password = "";
@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (empty($user_login_err) && empty($user_password_err)) {
 
-        $sql = "SELECT email, no_telp, nama, tanggal_lahir, jenis_kelamin, divisi, password FROM admin_zoo WHERE email = ?";
+        $sql = "SELECT email, password FROM admin_zoo WHERE email = ?";
 
         if ($stmt = mysqli_prepare($mysqli, $sql)) {
             
@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 if (mysqli_stmt_num_rows($stmt) == 1) {
                     
-                    mysqli_stmt_bind_result($stmt, $email, $username, $hashed_password);
+                    mysqli_stmt_bind_result($stmt,$email, $hashed_password);
 
                     if (mysqli_stmt_fetch($stmt)) {
                         $hashed_password = password_hash($user_password, PASSWORD_BCRYPT);
@@ -54,13 +54,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             header("location: ../admin-zoo");
                         } else {
-                            $login_err = "Username atau password yang anda masukkan salah.";
+                            $login_err = "Email atau password yang anda masukkan salah.";
 
                         }
                     }
                 } else {
 
-                    $login_err = "Username atau password tidak sah.";
+                    $login_err = "Email atau password tidak sah.";
                 }
             } else {
                 echo "<script>" . "alert('Terjadi kesalahan. Coba lagi nanti.');" . "</script>";
