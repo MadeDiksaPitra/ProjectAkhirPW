@@ -2,13 +2,18 @@
 require "../Models/opt/connection.php";
 class model_binatang
 {
-    public function getListNama()
+    public function getListNama($kelas)
     {
         global $mysqli;
 
-        $rs = $mysqli->query("SELECT nama FROM list_binatang");
+        $rs = $mysqli->query("SELECT id, nama, foto_profil FROM list_binatang where kelas = $kelas");
 
-        return $rs;
+        $rows = array();
+        while ($row = $rs->fetch_assoc()) {
+            $rows[] = $row;
+        }
+
+        return $rows;
     }
 
     public function getDeskripsi($id)

@@ -1,10 +1,17 @@
 <?php
-
+session_start();
 include_once("../Models/model_admin.php");
 
 class controller_admin
 {
     public $model;
+
+    public function cekSession()
+    {
+        if (!isset($_SESSION["email"])) {
+            header("location:../admin-login");
+        }
+    }
 
     public function __construct()
     {
@@ -12,15 +19,16 @@ class controller_admin
     }
     public function view()
     {
+        $this->cekSession();
         $data = $this->model->getSemuaData();
+        include '../Views/view-admin/view-sidebar/sidebar.php';
+        include '../Views/view-admin/view-logout/logout.php';
         include '../Views/view-admin/view-zoo/zoo.php';
     }
 
     public function add($id, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman)
     {
-        session_start();
-        print_r("ini file control");
-
+        $this->cekSession();
         $this->model->setData($id, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman);
         header("location:../admin-zoo");
     }
@@ -34,6 +42,7 @@ class controller_admin
 
     public function update($no, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman)
     {
+        $this->cekSession();
         $this->model->updateRow($no, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman);
         header("location:../admin-zoo");
     }
@@ -46,13 +55,15 @@ class controller_admin
 
     public function viewAdmin($email)
     {
+        $this->cekSession();
         $data = $this->model->getAllRowAdmin();
         $data2 = $this->model->getRowAdmin($email);
+        include '../Views/view-admin/view-sidebar/sidebar.php';
+        include '../Views/view-admin/view-logout/logout.php';
         include '../Views/view-admin/view-profile/profile.php';
     }
 
     public function log()
     {
-
     }
 }

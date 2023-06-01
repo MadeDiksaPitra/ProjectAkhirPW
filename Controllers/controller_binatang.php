@@ -10,10 +10,10 @@ class controller_binatang
     {
         $this->model = new model_binatang();
     }
-    public function viewListBinatang()
+    public function viewListBinatang($kelas)
     {
-        $data = $this->model->getListNama();
-        include '../Views/view-user/view-list/list.html';
+        $data = $this->model->getListNama($kelas);
+        include '../Views/view-user/view-list/list.php';
     }
 
     public function viewDeskripsi($id)
