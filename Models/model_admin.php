@@ -1,6 +1,6 @@
 <?php
 // require "../Models/opt/connection.php";
-require "F:\\Program Files\\xampp\\htdocs\\ProjectAkhirPW\\Models\\opt\\connection.php";
+require "../Models/opt/connection.php";
 class model_admin
 {
     private $id;
