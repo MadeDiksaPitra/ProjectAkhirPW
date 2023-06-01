@@ -6,7 +6,7 @@ class model_binatang
     {
         global $mysqli;
 
-        $rs = $mysqli->query("SELECT id, nama, foto_profil FROM list_binatang where kelas = $kelas");
+        $rs = $mysqli->query("SELECT id, nama, foto_profil FROM list_binatang where kelas = '$kelas'");
 
         $rows = array();
         while ($row = $rs->fetch_assoc()) {
@@ -19,6 +19,8 @@ class model_binatang
     public function getDeskripsi($id)
     {
         global $mysqli;
+
+        $rs = array();
 
         $rs = $mysqli->query("SELECT * FROM list_binatang WHERE id = '$id'");
 

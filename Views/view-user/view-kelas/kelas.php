@@ -9,7 +9,13 @@
 </head>
 
 <body>
-    <form action="./list-binatang" method="post" name="kelas">
+    <form action="./list-binatang" method="get">
+        <input type="text" name="kelas" />
+        <button type="submit">
+            Tambahkan
+        </button>
+    </form>
+    <!-- <form action="./list-binatang" method="post" name="kelas">
         <button type="submit" value="Mamalia" name="kelas" id="Mamalia">Mamalia</button>
     </form>
     <form action="./list-binatang" method="post">
@@ -20,7 +26,7 @@
     </form>
     <form action="./list-binatang" method="post">
         <button type="submit" value="Pisces" name="kelas">Pisces</button>
-    </form>
+    </form> -->
 </body>
 
 </html>

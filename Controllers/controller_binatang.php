@@ -19,6 +19,6 @@ class controller_binatang
     public function viewDeskripsi($id)
     {
         $data = $this->model->getDeskripsi($id);
-        include '../Views/view-user/view-data/data.html';
+        include '../Views/view-user/view-data/data.php';
     }
 }

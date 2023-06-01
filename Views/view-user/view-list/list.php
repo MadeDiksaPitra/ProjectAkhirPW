@@ -19,10 +19,8 @@
         foreach ($data as $index) {
             echo "
             <tr>
-                <a href='../deskripsi/?id=" . $index["id"] . "'>
-                    <td>$index[nama]</td>
-                    <td>$index[foto_profil]</td>
-                </a>
+                <td><a href='../deskripsi/?id=" . $index["id"] . "'>$index[nama]</a></td>
+                <td>$index[foto_profil]</td>
             </tr>
         ";
         }
