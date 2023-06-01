@@ -20,8 +20,6 @@ class model_binatang
     {
         global $mysqli;
 
-        $rs = array();
-
         $rs = $mysqli->query("SELECT * FROM list_binatang WHERE id = '$id'");
 
         return $rs;
