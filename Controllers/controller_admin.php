@@ -1,7 +1,6 @@
 <?php
 
 include_once("../Models/model_admin.php");
-// include_once("F:\\Program Files\\xampp\\htdocs\\ProjectAkhirPW\\Models\\model_admin.php");
 
 class controller_admin
 {
@@ -22,7 +21,7 @@ class controller_admin
         session_start();
         print_r("ini file control");
 
-        $e = $this->model->setData($id, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman);
+        $this->model->setData($id, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $foto_profil, $foto_halaman);
         header("location:../admin-zoo");
     }
 

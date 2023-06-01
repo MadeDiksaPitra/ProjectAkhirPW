@@ -49,8 +49,8 @@
                 <td>$index[ancaman]</td>
                 <td>$index[foto_profil]</td>
                 <td>$index[foto_halaman]</td>
-                <td><a href='../admin-update/index.php?id=" . $index["id"] . "'>Update</a></td>
-                <td><a href='../Api/admin-delete/index.php?id=" . $index["id"] . "' onclick='return confirm(\"Apakah Anda yakin ingin menghapus data ini?\")'>Hapus</a></td>
+                <td><a href='../admin-update/?id=" . $index["id"] . "'>Update</a></td>
+                <td><a href='../admin-delete/?id=" . $index["id"] . "' onclick='return confirm(\"Apakah Anda yakin ingin menghapus data ini?\")'>Hapus</a></td>
             </tr>
         ";
         }
