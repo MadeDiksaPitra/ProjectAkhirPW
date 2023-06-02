@@ -35,6 +35,8 @@
 
         <?php
         foreach ($data as $index) {
+            $temp = trim($index['foto_profil']);
+
             echo "
             <tr>
                 <td>$index[id]</td>
@@ -47,8 +49,8 @@
                 <td>$index[cara_hidup]</td>
                 <td>$index[reproduksi]</td>
                 <td>$index[ancaman]</td>
-                <td>$index[foto_profil]</td>
-                <td>$index[foto_halaman]</td>
+                <td><img src=\"../Files/foto_profil/$temp\" ></td>
+                <td><img src=\"../Files/foto_halaman/$index[foto_halaman]\" ></td>
                 <td><a href='../form-update/?id=" . $index["id"] . "'>Update</a></td>
                 <td><a href='../admin-delete/?id=" . $index["id"] . "' onclick='return confirm(\"Apakah Anda yakin ingin menghapus data ini?\")'>Hapus</a></td>
             </tr>

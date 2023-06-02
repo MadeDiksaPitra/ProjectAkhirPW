@@ -118,6 +118,6 @@ class model_admin
     {
         list($seconds, $microseconds) = explode(' ', microtime());
         $milliseconds = round($microseconds * 1000);
-        return round($seconds * 1000) + $milliseconds;
+        return trim(round($seconds * 1000) + $milliseconds);
     }
 }

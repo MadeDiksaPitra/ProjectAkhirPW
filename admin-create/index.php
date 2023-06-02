@@ -19,30 +19,20 @@ $ancaman= $_POST["ancaman"];
 
 $nama1 = $controller->namaFile();
 
+$target_path1 = "../Files/foto_profil/";
+$fileExt = pathinfo($_FILES['foto_profil']['name'], PATHINFO_EXTENSION);
+$target_path1 = $target_path1 . $nama1 . "." . $fileExt;
+move_uploaded_file($_FILES['foto_profil']['tmp_name'],$target_path1);
 
-// $targetDir = "uploads/"; // Direktori tujuan untuk menyimpan file yang diunggah
-// $targetFile = $targetDir . basename($_FILES["fileToUpload"]["name"]); // Path lengkap file tujuan
-
-// // Periksa apakah file sudah ada atau belum
-// if (file_exists($targetFile)) {
-//     echo "File already exists.";
-// } else {
-//     // Coba upload file
-//     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $targetFile)) {
-//         echo "File uploaded successfully.";
-//     } else {
-//         echo "Error uploading file.";
-//     }
-// }
-
-
-$target_path1 = "../Files/foto_profil";
-$target_path1 = $target_path1 . basename($_FILES['foto_profil']['name']);
-// move_uploaded_file($_FILES['foto_profil']['tmp_name'],$target_path1);
+$profil_path = $nama1 . "." . $fileExt;
 
 $nama2 = $controller->namaFile();
 
-$target_path2 = "../Files/foto_halaman";
-$target_path2 = $target_path2 . basename($_FILES['foto_halaman']['name']);
+$target_path2 = "../Files/foto_halaman/";
+$fileExt2 = pathinfo($_FILES['foto_halaman']['name'], PATHINFO_EXTENSION);
+$target_path2 = $target_path2 . $nama2 . "." . $fileExt2;
+move_uploaded_file($_FILES['foto_halaman']['tmp_name'],$target_path2);
 
-$controller->add($id, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, $nama1, $nama2);
+$halaman_path = $nama2 . "." . $fileExt2;
+
+$controller->add($id, $nama, $kelas, $fakta_unik, $keterangan, $habitat, $makanan, $cara_hidup, $reproduksi, $ancaman, trim($profil_path), trim($halaman_path));
