@@ -33,8 +33,8 @@ class model_admin
         global $mysqli;
 
         // try {
-            $mysqli->query("INSERT INTO list_binatang VALUES ('$this->id', '$this->nama', '$this->kelas', '$this->fakta_unik', '$this->keterangan', '$this->habitat', '$this->makanan', '$this->cara_hidup', '$this->reproduksi', '$this->ancaman', ' $this->foto_profil', '$this->foto_halaman')");
-            // return $e = "";
+        $mysqli->query("INSERT INTO list_binatang VALUES ('$this->id', '$this->nama', '$this->kelas', '$this->fakta_unik', '$this->keterangan', '$this->habitat', '$this->makanan', '$this->cara_hidup', '$this->reproduksi', '$this->ancaman', ' $this->foto_profil', '$this->foto_halaman')");
+        // return $e = "";
         // } catch (mysqli_sql_exception $e) {
         //     return $e;
         // }
@@ -82,11 +82,11 @@ class model_admin
         }
         return $rows;
     }
-    
+
     public function getRowAdmin($email)
     {
         global $mysqli;
-    
+
         $rs = $mysqli->query("SELECT * FROM admin_zoo WHERE email = '$email'");
         $rows = array();
         while ($row = $rs->fetch_assoc()) {
@@ -94,7 +94,7 @@ class model_admin
         }
         return $rows;
     }
-    
+
     public function getAllRowAdmin()
     {
         global $mysqli;
@@ -112,7 +112,12 @@ class model_admin
         global $mysqli;
 
         $rs = $mysqli->query("SELECT password FROM admin_zoo WHERE email = '$email'");
-        
+    }
 
+    function getCurrentTimeMillis()
+    {
+        list($seconds, $microseconds) = explode(' ', microtime());
+        $milliseconds = round($microseconds * 1000);
+        return round($seconds * 1000) + $milliseconds;
     }
 }

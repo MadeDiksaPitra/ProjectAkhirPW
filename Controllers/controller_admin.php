@@ -66,4 +66,10 @@ class controller_admin
     public function log()
     {
     }
+
+    public function namaFile()
+    {
+        $data = $this->model->getCurrentTimeMillis();
+        return $data;
+    }
 }
