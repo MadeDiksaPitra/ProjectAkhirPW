@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form action="../admin-create/index.php" method="post">
+    <form enctype="multipart/form-data" action="../admin-create/index.php" method="post">
 
         <p>ID</p>
         <input type="text" name="id" placeholder="Masukkan ID" />
@@ -42,10 +42,12 @@
         <input type="text" name="ancaman" placeholder="Masukkan Ancaman" />
 
         <p>Foto Profil</p>
-        <input type="text" name="foto_profil" placeholder="Masukkan Foto Profil" />
+        <!-- <input type="text" name="foto_profil" placeholder="Masukkan Foto Profil" /> -->
+        <input name="foto_profil" type="file" />
 
         <p>Foto Halaman</p>
-        <input type="text" name="foto_halaman" placeholder="Masukkan Foto Halaman" />
+        <!-- <input type="text" name="foto_halaman" placeholder="Masukkan Foto Halaman" /> -->
+        <input name="foto_halaman" type="file" />
 
         <p></p>
         <button name="submit" type="submit">
