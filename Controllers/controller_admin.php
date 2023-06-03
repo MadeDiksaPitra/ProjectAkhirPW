@@ -21,8 +21,6 @@ class controller_admin
     {
         $this->cekSession();
         $data = $this->model->getSemuaData();
-        // include '../Views/view-admin/view-sidebar/sidebar.php';
-        // include '../Views/view-admin/view-logout/logout.php';
         include '../Views/view-admin/view-zoo/zoo.php';
     }
 

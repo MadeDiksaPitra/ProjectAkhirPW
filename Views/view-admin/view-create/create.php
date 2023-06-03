@@ -69,7 +69,6 @@
 
                   <script>
                     document.getElementById("myButton").addEventListener("click", function() {
-                      // Perform the desired action when the button is clicked
                       window.location.href = "../admin-zoo"
                     });
                   </script>
@@ -105,7 +104,6 @@
 
                   <script>
                     document.getElementById("myButton1").addEventListener("click", function() {
-                      // Perform the desired action when the button is clicked
                       window.location.href = "../admin-profile"
                     });
                   </script>
@@ -133,7 +131,6 @@
 
                     <script>
                     document.getElementById("myButton2").addEventListener("click", function() {
-                      // Perform the desired action when the button is clicked
                       window.location.href = "../admin-login/logout.php"
                     });
                   </script>
@@ -260,16 +257,10 @@
                 <div class="create-container21">
                   <span class="create-text17">Foto Profil</span>
                   <input name="foto_profil" type="file" />
-                  <!-- <button type="button" class="create-button button">
-                    Upload
-                  </button> -->
                 </div>
                 <div class="create-container22">
                   <span class="create-text18">Foto Halaman</span>
                   <input name="foto_profil" type="file" />
-                  <!-- <button type="button" class="create-button1 button">
-                    Upload
-                  </button> -->
                 </div>
                 <div class="create-container23">
                   <button name="submit" type="submit" class="create-button2 button">

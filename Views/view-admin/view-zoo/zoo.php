@@ -144,7 +144,6 @@
 
                 <script>
                   document.getElementById("myButton").addEventListener("click", function() {
-                    // Perform the desired action when the button is clicked
                     window.location.href = "../admin-zoo"
                   });
                 </script>
@@ -176,7 +175,7 @@
 
                   <script>
                     document.getElementById("myButton1").addEventListener("click", function() {
-                      // Perform the desired action when the button is clicked
+
                       window.location.href = "../admin-profile"
                     });
                   </script>
@@ -200,7 +199,7 @@
 
                   <script>
                     document.getElementById("myButton2").addEventListener("click", function() {
-                      // Perform the desired action when the button is clicked
+
                       window.location.href = "../admin-login/logout.php"
                     });
                   </script>

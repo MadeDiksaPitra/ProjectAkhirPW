@@ -1,5 +1,4 @@
 <?php
-// require "../Models/opt/connection.php";
 require "../Models/opt/connection.php";
 class model_admin
 {
@@ -32,12 +31,7 @@ class model_admin
         $this->foto_halaman = $foto_halaman;
         global $mysqli;
 
-        // try {
         $mysqli->query("INSERT INTO list_binatang VALUES ('$this->id', '$this->nama', '$this->kelas', '$this->fakta_unik', '$this->keterangan', '$this->habitat', '$this->makanan', '$this->cara_hidup', '$this->reproduksi', '$this->ancaman', ' $this->foto_profil', '$this->foto_halaman')");
-        // return $e = "";
-        // } catch (mysqli_sql_exception $e) {
-        //     return $e;
-        // }
     }
 
     public function getSemuaData()

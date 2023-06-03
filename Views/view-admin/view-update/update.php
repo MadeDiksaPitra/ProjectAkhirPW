@@ -144,7 +144,6 @@
 
                   <script>
                     document.getElementById("myButton").addEventListener("click", function() {
-                      // Perform the desired action when the button is clicked
                       window.location.href = "../admin-zoo"
                     });
                   </script>
@@ -176,7 +175,6 @@
 
                   <script>
                     document.getElementById("myButton1").addEventListener("click", function() {
-                      // Perform the desired action when the button is clicked
                       window.location.href = "../admin-profile"
                     });
                   </script>
@@ -200,7 +198,6 @@
 
                     <script>
                       document.getElementById("myButton2").addEventListener("click", function() {
-                        // Perform the desired action when the button is clicked
                         window.location.href = "../admin-login/logout.php"
                       });
                     </script>
@@ -229,7 +226,7 @@
         <div class="update-container07">
           <div class="update-container08"></div>
           <div class="update-container09">
-            <form enctype="multipart/form-data" action="../admin-create/index.php" method="post" class="update-form3 input">
+            <form enctype="multipart/form-data" action="../admin-update/index.php" method="post" class="update-form3 input">
               <div class="update-container10">
                 <span class="update-text06">Update Data</span>
               </div>
@@ -279,9 +276,6 @@
                 $temp = trim($data['foto_profil']);
                 echo "<input name=\"foto_profil\" type=\"file\"/></a>";
                 ?>
-                <!-- <button type="button" class="update-button button">
-                    Upload
-                  </button> -->
               </div>
               <div class="update-container22">
                 <span class="update-text18">Foto Halaman</span>
@@ -289,12 +283,9 @@
                 $temp1 = trim($data['foto_halaman']);
                 echo "<input name=\"foto_halaman\" type=\"file\"/></a>";
                 ?>
-                <!-- <button type="button" class="update-button1 button">
-                    Upload
-                  </button> -->
               </div>
               <div class="update-container23">
-                <button type="button" class="update-button2 button">
+                <button name="submit" type="submit" class="update-button2 button">
                   <span>
                     <span>Tambah</span>
                     <br />

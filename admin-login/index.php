@@ -110,7 +110,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="form-wrap border rounded p-4">
                     <h1>Login</h1>
                     <p>Please login to continue</p>
-                    <!-- form starts here -->
                     <form action="<?= htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" novalidate>
                         <div class="mb-3">
                             <label for="user_login" class="form-label">Username</label>
