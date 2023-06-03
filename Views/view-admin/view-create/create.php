@@ -42,11 +42,9 @@
         <input type="text" name="ancaman" placeholder="Masukkan Ancaman" />
 
         <p>Foto Profil</p>
-        <!-- <input type="text" name="foto_profil" placeholder="Masukkan Foto Profil" /> -->
         <input name="foto_profil" type="file" />
 
         <p>Foto Halaman</p>
-        <!-- <input type="text" name="foto_halaman" placeholder="Masukkan Foto Halaman" /> -->
         <input name="foto_halaman" type="file" />
 
         <p></p>
