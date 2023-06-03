@@ -42,6 +42,20 @@
         <input type="text" name="ancaman" placeholder="Masukkan Ancaman" value="<?php echo $data["ancaman"]?>"/>
 
         <p>Foto Profil</p>
+        <!-- <input type="text" name="foto_profil" placeholder="Masukkan Foto Profil" /> -->
+        <?php
+        echo "
+        <input name="foto_profil" type="file" value="<a href='../form-update/?id=" . $index["id"] . "'>"/>
+        ";
+        ?>
+
+
+        <p>Foto Halaman</p>
+        <!-- <input type="text" name="foto_halaman" placeholder="Masukkan Foto Halaman" /> -->
+        <input name="foto_halaman" type="file" />
+
+<a href='../form-update/?id=" . $index["id"] . "'>
+        <p>Foto Profil</p>
         <input type="text" name="foto_profil" placeholder="Masukkan Foto Profil" value="<?php echo $data["foto_profil"]?>"/>
 
         <p>Foto Halaman</p>
