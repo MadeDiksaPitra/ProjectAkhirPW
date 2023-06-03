@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<h2>List Hewan</h2>
+    <h2>List Hewan</h2>
     <table class="tabel">
         <tr>
             <th>id</th>
@@ -17,14 +17,28 @@
         </tr>
 
         <?php
-        foreach ($data as $index) {
-            echo "
-            <tr>
-                <td><a href='../deskripsi/?id=" . $index["id"] . "'>$index[nama]</a></td>
-                <td>$index[foto_profil]</td>
-            </tr>
-        ";
+        // foreach ($data as $index) {
+        //     echo "
+        //     <tr>
+        //         <td><a href='../deskripsi/?id=" . $index["id"] . "'>$index[nama]</a></td>
+        //         <td>$index[foto_profil]</td>
+        //     </tr>
+        // ";
+        // }
+        
+        $count = 0;
+        foreach ($data as $value) {
+            if ($count % 4 == 0) {
+                echo "<tr>"; // Mulai baris baru setiap 4 data
+            }
+            echo "<td><a href='../deskripsi/?id=" . $value["id"] . "'>$value[nama]</a></td>"; // Masukkan data ke dalam sel tabel
+            echo "<td>$value[foto_profil]</td>";
+            $count++;
+            if ($count % 4 == 0) {
+                echo "</tr>"; // Selesaikan baris setelah 4 data
+            }
         }
+
         ?>
     </table>
 </body>
