@@ -27,10 +27,6 @@
     <p>Kelas</p>
     <input type="text" name="divisi" value="<?php echo $data2["divisi"] ?>" />
 
-    <p>Kelas</p>
-    <input type="text" name="password" value="<?php echo $data2["password"] ?>" />
-
-
     <p></p>
 
     <table>
@@ -38,10 +34,7 @@
             <th>email</th>
             <th>no_telp</th>
             <th>nama</th>
-            <th>tgl_lahir</th>
-            <th>ket</th>
             <th>Hapushabit</th>
-            <th>makanan</th>
         </tr>
 
         <?php
@@ -51,10 +44,7 @@
                 <td>$index[email]</td>
                 <td>$index[no_telp]</td>
                 <td>$index[nama]</td>
-                <td>$index[tanggal_lahir]</td>
-                <td>$index[jenis_kelamin]</td>
                 <td>$index[divisi]</td>
-                <td>$index[password]</td>
             </tr>
         ";
         }
