@@ -9,6 +9,7 @@
 </head>
 
 <body>
+<h2>List Hewan</h2>
     <table class="tabel">
         <tr>
             <th>id</th>

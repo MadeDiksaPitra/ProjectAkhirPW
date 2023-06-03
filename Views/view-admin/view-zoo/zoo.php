@@ -18,10 +18,11 @@
 
     <table class="tabel">
         <tr>
-            <th>id</th>
+            <th>foto</th>
             <th>Nama</th>
+            <th>id</th>
             <th>kelas</th>
-            <th>fu</th>
+            <!-- <th>fu</th>
             <th>ket</th>
             <th>Hapushabit</th>
             <th>makanan</th>
@@ -29,8 +30,10 @@
             <th>reproduksi</th>
             <th>ancaman</th>
             <th>fp</th>
-            <th>fh</th>
-            <th colspan='2'>Edit</th>
+            <th>fh</th> -->
+            
+            <th>Edit</th>
+            <th>Hapus</th>
         </tr>
 
         <?php
@@ -39,18 +42,10 @@
 
             echo "
             <tr>
-                <td>$index[id]</td>
-                <td>$index[nama]</td>
-                <td>$index[kelas]</td>
-                <td>$index[fakta_unik]</td>
-                <td>$index[keterangan]</td>
-                <td>$index[habitat]</td>
-                <td>$index[makanan]</td>
-                <td>$index[cara_hidup]</td>
-                <td>$index[reproduksi]</td>
-                <td>$index[ancaman]</td>
                 <td><img src=\"../Files/foto_profil/$temp\" ></td>
-                <td><img src=\"../Files/foto_halaman/$index[foto_halaman]\" ></td>
+                <td>$index[nama]</td>
+                <td>$index[id]</td>
+                <td>$index[kelas]</td>
                 <td><a href='../form-update/?id=" . $index["id"] . "'>Update</a></td>
                 <td><a href='../admin-delete/?id=" . $index["id"] . "' onclick='return confirm(\"Apakah Anda yakin ingin menghapus data ini?\")'>Hapus</a></td>
             </tr>
