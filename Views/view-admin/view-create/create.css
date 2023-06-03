@@ -5,13 +5,15 @@
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
+  background-color: #EFF2F4;
 }
 .create-container01 {
   width: 100%;
-  height: 1694px;
+  height: auto;
   display: flex;
   align-items: flex-start;
   flex-direction: row;
+  background-color: #EFF2F4;
 }
 .create-container02 {
   flex: 0 0 auto;
@@ -55,7 +57,7 @@
 }
 .create-container04 {
   width: 100%;
-  height: 12000px;
+  height: 100%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -233,10 +235,10 @@
   text-decoration: none;
 }
 .create-container05 {
+  flex: 1;
   width: 100%;
-  height: 1381px;
+  height: 100%;
   display: flex;
-  box-shadow: 5px 5px 10px 0px #d4d4d4;
   align-items: flex-start;
 }
 .create-divlogout {
@@ -337,7 +339,7 @@
 }
 .create-container06 {
   width: 8px;
-  height: 100%;
+  height: var(--dl-size-size-large);
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -345,7 +347,7 @@
 }
 .create-container07 {
   width: 100%;
-  height: 1534px;
+  height: auto;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -367,7 +369,7 @@
 }
 .create-container09 {
   width: 100%;
-  height: 1435px;
+  height: auto;
   display: flex;
   padding: var(--dl-space-space-threeunits);
   align-items: flex-start;
@@ -376,7 +378,7 @@
 }
 .create-form3 {
   width: 100%;
-  height: 1506px;
+  height: auto;
   display: flex;
   padding: 0px;
   align-self: center;
@@ -412,16 +414,6 @@
 }
 .create-container11 {
   flex: 0 0 auto;
-  width: auto;
-  border: 2px dashed rgba(120, 120, 120, 0.4);
-  height: auto;
-  display: flex;
-  align-items: flex-start;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.create-container12 {
-  flex: 0 0 auto;
   width: 100%;
   height: 100px;
   display: flex;
@@ -444,13 +436,12 @@
   text-decoration: none;
 }
 .create-textinput {
-  color: #bfbdbd;
   width: 100%;
   height: 50%;
   border-color: #c9c6c6;
   border-radius: var(--dl-radius-radius-radius8);
 }
-.create-container13 {
+.create-container12 {
   flex: 0 0 auto;
   width: 100%;
   height: 100px;
@@ -474,13 +465,12 @@
   text-decoration: none;
 }
 .create-textinput1 {
-  color: #bfbdbd;
   width: 100%;
   height: 50%;
   border-color: #c9c6c6;
   border-radius: var(--dl-radius-radius-radius8);
 }
-.create-container14 {
+.create-container13 {
   flex: 0 0 auto;
   width: 100%;
   height: 100px;
@@ -504,13 +494,12 @@
   text-decoration: none;
 }
 .create-textinput2 {
-  color: #bfbdbd;
   width: 100%;
   height: 50%;
   border-color: #c9c6c6;
   border-radius: var(--dl-radius-radius-radius8);
 }
-.create-container15 {
+.create-container14 {
   flex: 0 0 auto;
   width: 100%;
   height: 125px;
@@ -541,7 +530,7 @@
   border-width: 1px;
   border-radius: var(--dl-radius-radius-radius8);
 }
-.create-container16 {
+.create-container15 {
   flex: 0 0 auto;
   width: 100%;
   height: 125px;
@@ -572,7 +561,7 @@
   border-width: 1px;
   border-radius: var(--dl-radius-radius-radius8);
 }
-.create-container17 {
+.create-container16 {
   flex: 0 0 auto;
   width: 100%;
   height: 125px;
@@ -603,7 +592,7 @@
   border-width: 1px;
   border-radius: var(--dl-radius-radius-radius8);
 }
-.create-container18 {
+.create-container17 {
   flex: 0 0 auto;
   width: 100%;
   height: 125px;
@@ -634,7 +623,7 @@
   border-width: 1px;
   border-radius: var(--dl-radius-radius-radius8);
 }
-.create-container19 {
+.create-container18 {
   flex: 0 0 auto;
   width: 100%;
   height: 125px;
@@ -665,7 +654,7 @@
   border-width: 1px;
   border-radius: var(--dl-radius-radius-radius8);
 }
-.create-container20 {
+.create-container19 {
   flex: 0 0 auto;
   width: 100%;
   height: 125px;
@@ -696,7 +685,7 @@
   border-width: 1px;
   border-radius: var(--dl-radius-radius-radius8);
 }
-.create-container21 {
+.create-container20 {
   flex: 0 0 auto;
   width: 100%;
   height: 125px;
@@ -727,7 +716,7 @@
   border-width: 1px;
   border-radius: var(--dl-radius-radius-radius8);
 }
-.create-container22 {
+.create-container21 {
   width: 100%;
   height: 80px;
   display: flex;
@@ -760,7 +749,7 @@
   border-radius: var(--dl-radius-radius-radius8);
   background-color: #1A8FDD;
 }
-.create-container23 {
+.create-container22 {
   width: 100%;
   height: 80px;
   display: flex;
@@ -793,7 +782,7 @@
   border-radius: var(--dl-radius-radius-radius8);
   background-color: #1A8FDD;
 }
-.create-container24 {
+.create-container23 {
   width: 100%;
   height: 80px;
   display: flex;

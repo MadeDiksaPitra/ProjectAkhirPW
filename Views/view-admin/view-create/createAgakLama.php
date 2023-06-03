@@ -65,15 +65,7 @@
             <div class="create-container04">
               <div class="create-divcrud">
                 <form class="create-form">
-                  <div id="myButton" class="create-nav-item button">
-
-                  <script>
-                    document.getElementById("myButton").addEventListener("click", function() {
-                      // Perform the desired action when the button is clicked
-                      window.location.href = "../admin-zoo"
-                    });
-                  </script>
-
+                  <div class="create-nav-item button">
                     <div class="create-leading-icon-nav-link">
                       <div class="create-leading-icon">
                         <div class="create-home">
@@ -101,15 +93,7 @@
               </div>
               <div class="create-divprofile">
                 <form class="create-form1">
-                  <div id="myButton1" class="create-nav-item1 button">
-
-                  <script>
-                    document.getElementById("myButton1").addEventListener("click", function() {
-                      // Perform the desired action when the button is clicked
-                      window.location.href = "../admin-profile"
-                    });
-                  </script>
-
+                  <div class="create-nav-item1 button">
                     <div class="create-leading-icon-nav-link1">
                       <div class="create-leading-icon1">
                         <img
@@ -129,15 +113,7 @@
               <div class="create-divlogout">
                 <div class="create-logout-toogle">
                   <form class="create-form2">
-                    <div id="myButton2" class="create-nav-item2 button">
-
-                    <script>
-                    document.getElementById("myButton2").addEventListener("click", function() {
-                      // Perform the desired action when the button is clicked
-                      window.location.href = "../admin-login/logout.php"
-                    });
-                  </script>
-
+                    <div class="create-nav-item2 button">
                       <div class="create-leading-icon-nav-link2">
                         <div class="create-leading-icon2">
                           <div class="create-home3">
@@ -170,7 +146,7 @@
                 <div class="create-container10">
                   <span class="create-text06">Tambah Data</span>
                 </div>
-                <div class="create-container11">
+                <div class="create-container12">
                   <span class="create-text07">ID</span>
                   <input
                     type="text"
@@ -180,7 +156,7 @@
                     name="id"
                   />
                 </div>
-                <div class="create-container12">
+                <div class="create-container13">
                   <span class="create-text08">Nama</span>
                   <input
                     type="text"
@@ -190,7 +166,7 @@
                     name="nama"
                   />
                 </div>
-                <div class="create-container13">
+                <div class="create-container14">
                   <span class="create-text09">Kelas</span>
                   <input
                     type="text"
@@ -200,7 +176,7 @@
                     name="kelas"
                   />
                 </div>
-                <div class="create-container14">
+                <div class="create-container15">
                   <span class="create-text10">Fakta Unik</span>
                   <textarea
                     placeholder="Masukkan Fakta Unik"
@@ -208,7 +184,7 @@
                     name="fakta_unik"
                   ></textarea>
                 </div>
-                <div class="create-container15">
+                <div class="create-container16">
                   <span class="create-text11">Keterangan</span>
                   <textarea
                     placeholder="Masukkan Keterangan"
@@ -216,7 +192,7 @@
                     name="keterangan"
                   ></textarea>
                 </div>
-                <div class="create-container16">
+                <div class="create-container17">
                   <span class="create-text12">Habitat</span>
                   <textarea
                     placeholder="Masukkan Habitat"
@@ -224,7 +200,7 @@
                     name="habitat"
                   ></textarea>
                 </div>
-                <div class="create-container17">
+                <div class="create-container18">
                   <span class="create-text13">Makanan</span>
                   <textarea
                     placeholder="Masukkan Makanan"
@@ -232,7 +208,7 @@
                     name="makanan"
                   ></textarea>
                 </div>
-                <div class="create-container18">
+                <div class="create-container19">
                   <span class="create-text14">Cara Hidup</span>
                   <textarea
                     placeholder="Masukkan Cara Hidup"
@@ -240,7 +216,7 @@
                     name="cara_hidup"
                   ></textarea>
                 </div>
-                <div class="create-container19">
+                <div class="create-container20">
                   <span class="create-text15">Reproduksi</span>
                   <textarea
                     placeholder="Masukkan Reproduksi"
@@ -248,7 +224,7 @@
                     name="reproduksi"
                   ></textarea>
                 </div>
-                <div class="create-container20">
+                <div class="create-container21">
                   <span class="create-text16">Ancaman</span>
                   <textarea
                     placeholder="Masukkan Ancaman"
@@ -257,21 +233,21 @@
                     name="ancaman"
                   ></textarea>
                 </div>
-                <div class="create-container21">
+                <div class="create-container22">
                   <span class="create-text17">Foto Profil</span>
                   <input name="foto_profil" type="file" />
                   <!-- <button type="button" class="create-button button">
                     Upload
                   </button> -->
                 </div>
-                <div class="create-container22">
+                <div class="create-container23">
                   <span class="create-text18">Foto Halaman</span>
-                  <input name="foto_profil" type="file" />
+                  <input name="foto_halaman" type="file" />
                   <!-- <button type="button" class="create-button1 button">
                     Upload
                   </button> -->
                 </div>
-                <div class="create-container23">
+                <div class="create-container24">
                   <button name="submit" type="submit" class="create-button2 button">
                     <span>
                       <span>Tambah</span>
