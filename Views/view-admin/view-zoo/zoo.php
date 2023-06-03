@@ -227,7 +227,7 @@
 
                 <script>
                   function create() {
-                    window.location.href = "../Views/view-admin/view-create/create.php";
+                    window.location.href = "../form-create";
                   }
                 </script>
 
