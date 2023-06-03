@@ -303,15 +303,16 @@
                   </div>
                   <div class=\"crud-container25\">
 
-                  <script>
-                  function delete() {
-                    window.location.href = \"../admin-delete/?id=" . $index["id"] . "\";
-                  }
-                  </script>
-
-                    <button class=\"crud-button2 button\" onclick=\"delete()\">
+                    <button id=\"$index[id]a\" class=\"crud-button2 button\">
                       <span class=\"crud-text17\">Delete</span>
                     </button>
+
+                    <script>
+                      document.getElementById(\"$index[id]a\").addEventListener(\"click\", function() {
+                        window.location.href = \"../admin-delete/?id=$index[id]\";
+                      });
+                    </script>
+
                   </div>
                 </div>
 
