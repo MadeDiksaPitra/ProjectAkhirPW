@@ -1,9 +1,8 @@
 <?php
 session_start();
 
-if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == TRUE) {
-    echo "<script>" . "window.location.href='./'" . "</script>";
-    exit;
+if (!isset($_SESSION["username"])) {
+    header("location:../admin-zoo");
 }
 
 require_once "../Models/opt/connection.php";
