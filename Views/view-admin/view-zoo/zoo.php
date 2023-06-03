@@ -290,12 +290,12 @@
 
                   
 
-                    <button id=\"update1\" class=\"crud-button1 button\" >
+                    <button id=\"$index[id]\" class=\"crud-button1 button\" >
                       <span class=\"crud-text16\">Update</span>
                     </button>
 
                     <script>
-                      document.getElementById(\"update1\").addEventListener(\"click\", function() {
+                      document.getElementById(\"$index[id]\").addEventListener(\"click\", function() {
                         window.location.href = \"../form-update/?id=$index[id]\"
                       });
                     </script>
