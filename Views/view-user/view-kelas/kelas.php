@@ -134,7 +134,7 @@
         <div class="kelas-container02">
           <div class="kelas-container03">
             <div class="kelas-container04">
-              <button type="button" class="kelas-button button" onclick='window.location.href = "../ProjectAkhirPW/admin-login/logout.php"'>
+              <button type="button" class="kelas-button button" onclick='window.location.href = "../ProjectAkhirPW/admin-login/"'>
                 Login Admin
               </button>
             </div>
