@@ -196,7 +196,15 @@
             <div class="crud-divlogout">
               <div class="crud-logout-toogle">
                 <form class="crud-form2">
-                  <div class="crud-nav-item2 button">
+                  <div id="myButton2" class="crud-nav-item2 button">
+
+                  <script>
+                    document.getElementById("myButton2").addEventListener("click", function() {
+                      // Perform the desired action when the button is clicked
+                      window.location.href = "../admin-login/logout.php"
+                    });
+                  </script>
+
                     <div class="crud-leading-icon-nav-link2">
                       <div class="crud-leading-icon2">
                         <div class="crud-home3">
@@ -303,7 +311,7 @@
                   </div>
                   <div class=\"crud-container25\">
 
-                    <button id=\"$index[id]a\" class=\"crud-button2 button\">
+                    <button id=\"$index[id]a\" class=\"crud-button2 button\" onclick='return confirm(\"Apakah Anda yakin ingin menghapus data ini?\")'>
                       <span class=\"crud-text17\">Delete</span>
                     </button>
 
