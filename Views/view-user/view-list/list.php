@@ -103,7 +103,7 @@
                     
 
                     <div class=\"list-container15\">
-                      <span class=\"list-text04\"><span>PANDA</span></span>
+                      <span class=\"list-text04\"><span>$index[nama]</span></span>
                     </div>
                   </div>
                   <div class=\"list-container16\"></div>

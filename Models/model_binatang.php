@@ -10,7 +10,7 @@ class model_binatang
 
         $rows = array();
         while ($row = $rs->fetch_assoc()) {
-            $rows = $row;
+            $rows[] = $row;
         }
 
         return $rows;
