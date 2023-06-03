@@ -58,8 +58,6 @@ class controller_admin
         $this->cekSession();
         $data = $this->model->getAllRowAdmin();
         $data2 = $this->model->getRowAdmin($email);
-        include '../Views/view-admin/view-sidebar/sidebar.php';
-        include '../Views/view-admin/view-logout/logout.php';
         include '../Views/view-admin/view-profile/profile.php';
     }
 
