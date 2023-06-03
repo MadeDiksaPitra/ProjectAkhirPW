@@ -1,0 +1,387 @@
+.kelas-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.kelas-container01 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.kelas-container02 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("public/external/zoo-1500w.png");
+}
+.kelas-container03 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.kelas-container04 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-self: flex-end;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.kelas-button {
+  color: #ffffff;
+  width: 196px;
+  height: 80px;
+  display: flex;
+  font-size: 24px;
+  font-family: Poppins;
+  border-width: 0px;
+  background-color: transparent;
+}
+.kelas-container05 {
+  width: 100%;
+  height: 720px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.kelas-container06 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-threeunits);
+  background-color: #476F1D;
+}
+.kelas-container07 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  align-items: flex-start;
+  flex-direction: row;
+}
+.kelas-text {
+  font-size: 128px;
+  font-family: Poppins;
+  line-height: 1;
+}
+.kelas-text01 {
+  color: #64bc06;
+}
+.kelas-text03 {
+  color: #32c7fe;
+}
+.kelas-text04 {
+  color: #32c7fe;
+}
+.kelas-container08 {
+  flex: 1;
+  width: 336px;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.kelas-container09 {
+  width: 344px;
+  height: 249px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("public/external/daun-400w.png");
+  background-position: center;
+}
+.kelas-container10 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.kelas-mamalia {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--dl-space-space-threeunits);
+  flex-direction: row;
+}
+.kelas-container11 {
+  flex: 0 0 auto;
+  width: 547px;
+  height: 312px;
+  display: flex;
+  align-items: center;
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  flex-direction: column;
+  justify-content: center;
+}
+.kelas-container12 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  box-shadow: 5px 5px 10px 0px #4c5b45;
+  align-items: flex-start;
+  border-radius: 32px;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("public/external/hewan-mamalia-2-400h.jpg");
+  background-position: center;
+}
+.kelas-container13 {
+  flex: 1;
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding-right: var(--dl-space-space-threeunits);
+  flex-direction: column;
+}
+.kelas-container14 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--dl-space-space-unit);
+  flex-direction: column;
+}
+.kelas-text05 {
+  color: #a1e953;
+  font-size: 32px;
+  font-family: Poppins;
+}
+.kelas-container15 {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.kelas-text06 {
+  color: rgb(161, 233, 83);
+  font-size: 24px;
+  text-align: justify;
+  font-family: Poppins;
+  line-height: 1.5;
+}
+.kelas-aves {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--dl-space-space-threeunits);
+  flex-direction: row;
+}
+.kelas-container16 {
+  flex: 0 0 auto;
+  width: 547px;
+  height: 312px;
+  display: flex;
+  align-items: center;
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  flex-direction: column;
+  justify-content: center;
+}
+.kelas-container17 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  box-shadow: 5px 5px 10px 0px #4c5b45;
+  align-items: flex-start;
+  border-radius: 32px;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("public/external/image001-58-810x540-400h.jpg");
+  background-position: center;
+}
+.kelas-container18 {
+  flex: 1;
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding-right: var(--dl-space-space-threeunits);
+  flex-direction: column;
+}
+.kelas-container19 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--dl-space-space-unit);
+  flex-direction: column;
+}
+.kelas-text07 {
+  color: rgb(161, 233, 83);
+  font-size: 32px;
+  font-family: Poppins;
+}
+.kelas-container20 {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.kelas-text08 {
+  color: rgb(161, 233, 83);
+  font-size: 24px;
+  text-align: justify;
+  font-family: Poppins;
+  line-height: 1.5;
+}
+.kelas-pisces {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--dl-space-space-threeunits);
+  flex-direction: row;
+}
+.kelas-container21 {
+  flex: 0 0 auto;
+  width: 547px;
+  height: 312px;
+  display: flex;
+  align-items: center;
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  flex-direction: column;
+  justify-content: center;
+}
+.kelas-container22 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  box-shadow: 5px 5px 10px 0px #4c5b45;
+  align-items: flex-start;
+  border-radius: 32px;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("public/external/e9058603-02ce-4049-921a-2136321e4a00-400h.jpg");
+  background-position: center;
+}
+.kelas-container23 {
+  flex: 1;
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding-right: var(--dl-space-space-threeunits);
+  flex-direction: column;
+}
+.kelas-container24 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--dl-space-space-unit);
+  flex-direction: column;
+}
+.kelas-text09 {
+  color: rgb(161, 233, 83);
+  font-size: 32px;
+  font-family: Poppins;
+}
+.kelas-container25 {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.kelas-text10 {
+  color: rgb(161, 233, 83);
+  font-size: 24px;
+  text-align: justify;
+  font-family: Poppins;
+  line-height: 1.5;
+}
+.kelas-reptil {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--dl-space-space-threeunits);
+  flex-direction: row;
+}
+.kelas-container26 {
+  flex: 0 0 auto;
+  width: 547px;
+  height: 312px;
+  display: flex;
+  align-items: center;
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  flex-direction: column;
+  justify-content: center;
+}
+.kelas-container27 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  box-shadow: 5px 5px 10px 0px #4c5b45;
+  align-items: flex-start;
+  border-radius: 32px;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url("public/external/2.-komodo-400h.jpg");
+  background-position: center;
+}
+.kelas-container28 {
+  flex: 1;
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding-right: var(--dl-space-space-threeunits);
+  flex-direction: column;
+}
+.kelas-container29 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--dl-space-space-unit);
+  flex-direction: column;
+}
+.kelas-text11 {
+  color: rgb(161, 233, 83);
+  font-size: 32px;
+  font-family: Poppins;
+}
+.kelas-container30 {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.kelas-text12 {
+  color: rgb(161, 233, 83);
+  font-size: 24px;
+  text-align: justify;
+  font-family: Poppins;
+  line-height: 1.5;
+}
