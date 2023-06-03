@@ -135,7 +135,7 @@
         <div class="list-container02">
           <div class="list-container03">
             <div class="list-container04">
-              <button type="button" class="list-button button" onclick='window.location.href = "../admin-login/logout.php"'>
+              <button type="button" class="list-button button" onclick='window.location.href = "../admin-login/"'>
                 Login Admin
               </button>
             </div>

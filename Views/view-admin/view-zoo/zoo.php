@@ -200,7 +200,7 @@
                   <script>
                     document.getElementById("myButton2").addEventListener("click", function() {
 
-                      window.location.href = "../admin-login/"
+                      window.location.href = "../admin-login/logout.php"
                     });
                   </script>
 

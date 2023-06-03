@@ -67,7 +67,7 @@
           <div class="deskripsi-container02">
             <div class="deskripsi-container03">
               <div class="deskripsi-container04">
-                <button type="button" class="deskripsi-button buttonn" onclick='window.location.href = "../admin-login/logout.php"'>
+                <button type="button" class="deskripsi-button buttonn" onclick='window.location.href = "../admin-login"'>
                 Login Admin
               </button>
               </div>
