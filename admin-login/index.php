@@ -109,7 +109,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 ?>
                 <div class="form-wrap border rounded p-4">
                     <h1>Login</h1>
-                    <p>Please login to continue</p>
+                    <p>Please login to continue as admin</p>
                     <form action="<?= htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" novalidate>
                         <div class="mb-3">
                             <label for="user_login" class="form-label">Username</label>
@@ -127,8 +127,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         </div>
                     </form>
                     <div class="bottom">
-                        <form action="guest.php" method="post">
-                            <input id="submit" class=".center" type="submit" name="create" value="Lihat Data">
+                        <form action="../index.php" method="post">
+                            <input id="submit" class=".center" type="submit" name="create" value="Kembali ke halaman utama">
                         </form>
                     </div>
 
