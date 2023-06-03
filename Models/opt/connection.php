@@ -1,2 +1,2 @@
 <?php
-$mysqli = new mysqli("localhost", "root", "", "kebun_binatang");
+$mysqli = new mysqli("localhost", "root", "mbois", "kebun_binatang");
