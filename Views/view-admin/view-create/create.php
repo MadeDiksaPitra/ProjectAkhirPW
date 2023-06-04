@@ -260,7 +260,7 @@
                 </div>
                 <div class="create-container22">
                   <span class="create-text18">Foto Halaman</span>
-                  <input name="foto_profil" type="file" />
+                  <input name="foto_halaman" type="file" />
                 </div>
                 <div class="create-container23">
                   <button name="submit" type="submit" class="create-button2 button">

@@ -78,7 +78,13 @@
             <div class="deskripsi-container07">
               <div class="deskripsi-container08">
                 <img
-                  src="../Files/foto_halaman/<?php echo $data["foto_halaman"] ?>"
+                <?php
+                  $temp = trim($data['foto_halaman']);
+
+                  echo "
+                  src=\"../Files/foto_halaman/$temp\"
+                  ";
+                ?>
                   alt="image"
                   class="deskripsi-image"
                 />
