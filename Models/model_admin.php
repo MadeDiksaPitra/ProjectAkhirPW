@@ -34,10 +34,10 @@ class model_admin
         $mysqli->query("INSERT INTO list_binatang VALUES ('$this->id', '$this->nama', '$this->kelas', '$this->fakta_unik', '$this->keterangan', '$this->habitat', '$this->makanan', '$this->cara_hidup', '$this->reproduksi', '$this->ancaman', ' $this->foto_profil', '$this->foto_halaman')");
     }
 
-    public function getSemuaData()
+    public function getSemuaData($kelas)
     {
         global $mysqli;
-        $rs = $mysqli->query("SELECT * FROM list_binatang");
+        $rs = $mysqli->query("SELECT * FROM list_binatang WHERE kelas = '$kelas'");
         $rows = array();
         while ($row = $rs->fetch_assoc()) {
             $rows[] = $row;
