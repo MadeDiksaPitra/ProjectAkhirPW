@@ -28,20 +28,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $sql = "SELECT email, password FROM admin_zoo WHERE email = ?";
 
+
         if ($stmt = mysqli_prepare($mysqli, $sql)) {
-            
+
             mysqli_stmt_bind_param($stmt, "s", $param_user_login);
 
-            
+
             $param_user_login = $user_login;
 
             if (mysqli_stmt_execute($stmt)) {
-               
+
                 mysqli_stmt_store_result($stmt);
 
                 if (mysqli_stmt_num_rows($stmt) == 1) {
-                    
-                    mysqli_stmt_bind_result($stmt,$email, $hashed_password);
+
+                    mysqli_stmt_bind_result($stmt, $email, $hashed_password);
 
                     if (mysqli_stmt_fetch($stmt)) {
                         $hashed_password = password_hash($user_password, PASSWORD_BCRYPT);
@@ -51,10 +52,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $_SESSION["email"] = $email;
                             $_SESSION["loggedin"] = TRUE;
 
+                            // $kelas = "SELECT kelas FROM admin_zoo WHERE email = $email";
+                            // $stmt2 = mysqli_prepare($mysqli, $kelas);
+                            // mysqli_stmt_execute($stmt2);
+                            // mysqli_stmt_store_result($stmt2);
+
+                            global $mysqli;
+
+                            $rs = $mysqli->query("SELECT divisi FROM admin_zoo WHERE email = '$email'");
+                            $rows = array();
+                            // $rs->fetch_assoc();
+                            while ($row = $rs->fetch_assoc()) {
+                                $rows = $row;
+                            }
+
+                            foreach($rows as $index){
+                                $_SESSION["kelas"] = $index;
+
+                            }
+
+
                             header("location: ../admin-zoo");
                         } else {
                             $login_err = "Email atau password yang anda masukkan salah.";
-
                         }
                     }
                 } else {
@@ -131,10 +151,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         </form>
                     </div>
 
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
 </body>
 
 </html>

@@ -17,10 +17,10 @@ class controller_admin
     {
         $this->model = new model_admin();
     }
-    public function view()
+    public function view($kelas)
     {
         $this->cekSession();
-        $data = $this->model->getSemuaData();
+        $data = $this->model->getSemuaData($kelas);
         include '../Views/view-admin/view-zoo/zoo.php';
     }
 
