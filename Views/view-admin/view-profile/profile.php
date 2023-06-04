@@ -133,13 +133,8 @@
       <div class="adsa-container01">
         <div class="adsa-container02">
           <div class="adsa-container03">
-            <div class="adsa-logo">
-              <div class="adsa-logo1">
-                <img src="../Views/view-admin/view-profile/public/external/unioni181-k6p4.svg" alt="UnionI181" class="adsa-union" />
-              </div>
-            </div>
             <div class="adsa-text">
-              <span class="adsa-text01">Cummo</span>
+              <span class="adsa-text01">Zoomwah</span>
             </div>
           </div>
           <div class="adsa-container04">
